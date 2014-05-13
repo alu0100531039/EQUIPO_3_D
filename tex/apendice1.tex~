@@ -1,0 +1,27 @@
+\section{Algoritmos utilizados}
+\label{Apendice1:XXX}
+\\
+A continuacion se muestran los nombres de los ficheros adjuntos a este informe que han sido utilizados para implementar las funciones y crear las tablas y graficos.\\
+%\begin{center}
+%\begin{footnotesize}
+%\begin{verbatim}
+\begin{enumerate}
+\item poisson.py : Algoritmo en Python en el que se ha desarrollado la funcion principal
+\item informacion.py : Algoritmo en Python que proporciona la informacion de la maquina
+\item tiempos.py : Algoritmo en Python que calcula el tiempo que tarda la maquina en ejecutar Poisson.py.
+\item graf tiempo.py : Algoritmo en python que genera la grafica del tiempo que de tiempos.py
+\item tablas.tex : Archivo LaTeX que genera las tablas de datos de comparacion de la Poisson\\
+\end{enumerate}
+%\end{footnotesize}
+%\end{center}
+
+%\section{Algoritmo YYY}
+%\label{Apendice1:YYY}
+
+%\begin{center}
+%\begin{footnotesize}
+%\begin{verbatim}
+
+
+%\end{footnotesize}
+%\end{center}

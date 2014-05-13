@@ -1,0 +1,40 @@
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{llll}
+N dipeptidos & Frec. observada & P(x) (Poisson) & Frecuencia Total 400xP(x) \\
+\hline
+0 & 264 & 0.6424283410 & 256.9713363872\\
+1 & 102 & 0.2842745409 & 113.7098163514\\
+2 & 27 & 0.0628957422 & 25.1582968677\\
+3 & 4 & 0.0092771220 & 3.7108487880\\
+4 & 2 & 0.0010262816 & 0.4105126472\\
+5 & 0 & 0.0000908259 & 0.0363303693\\
+6 & 0 & 0.0000066984 & 0.0026793647\\
+7 & 0 & 0.000004234 & 0.0001693741\\
+8 & 0 & 0.000000234 & 0.0000093685
+
+\end{tabular}
+\\
+\\
+\\
+\\
+\\
+
+\begin{tabular}{llll}
+N dipeptidos & Frec. observada & Codigo Triangulo & Codigo Diamante\\
+\hline
+0 & 264 & 276 & 305\\
+1 & 102 & 86 & 55\\
+2 & 27 & 26 & 23\\
+3 & 4 & 9 & 7\\
+4 & 2 & 3 & 3\\
+5 & 0 & 0 & 3\\
+6 & 0 & 0 & 2\\
+7 & 0 & 0 & 0\\
+8 & 0 & 0 & 2
+
+\end{tabular}
+\end{center}
+\caption{Comparacion}
+\label{tabla2}
+\end{table}

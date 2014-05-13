@@ -1,0 +1,21 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Motivaci\'on y objetivos}{2}
+\contentsline {section}{\numberline {1.1}Ejemplo 1. Distribuci\'on de los amino\'acidos en las prote\IeC {\'\i }nas}{2}
+\contentsline {section}{\numberline {1.2}Ejemplo 2. Carnavales}{3}
+\contentsline {section}{\numberline {1.3}Ejemplo 3. Cheques sin fondo}{4}
+\contentsline {chapter}{\numberline {2}Fundamentos te\'oricos}{5}
+\contentsline {section}{\numberline {2.1}Historia de la Distribuci\'on de Poisson}{5}
+\contentsline {section}{\numberline {2.2}Conceptos fundamentales}{5}
+\contentsline {subsection}{\numberline {2.2.1}Distribuci\'on de Poisson}{6}
+\contentsline {subsection}{\numberline {2.2.2}Aproximaci\'on de la binomial a la Poisson}{6}
+\contentsline {section}{\numberline {2.3}Propiedades}{7}
+\contentsline {section}{\numberline {2.4}Aplicaciones}{8}
+\contentsline {chapter}{\numberline {3}Procedimiento experimental}{9}
+\contentsline {section}{\numberline {3.1}Descripci\'on de los experimentos}{9}
+\contentsline {section}{\numberline {3.2}Descripci\'on del material}{11}
+\contentsline {section}{\numberline {3.3}Resultados obtenidos}{12}
+\contentsline {section}{\numberline {3.4}An\'alisis de los resultados}{12}
+\contentsline {chapter}{\numberline {4}Conclusiones}{15}
+\contentsline {chapter}{\numberline {A}Archivos adjuntos}{17}
+\contentsline {section}{\numberline {A.1}Algoritmos utilizados}{17}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{17}

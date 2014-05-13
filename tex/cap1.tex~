@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 1: Motivación y Objetivos 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+En la vida cotidiana aparecen distintas situaciones que conviene analizar para realizar informes, estudios, predicciones, etc. Ejemplos de ellas pordíran ser el 'Número de hijos por pareja de un país' o el 'Número de piezas defectuosas en un lote de 100 bombillas'. Dada la naturaleza de estas variables y considerando la definiciones que se muestran a lo largo del informe, se puede admitir que seguirán una distribución de Poisson.
+\\
+Por esto el objetivo principal de este trabajo va a ser la implementación en Python de una distribución de Poisson, para así poder encontrar solución a este tipo de problemas.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ejemplo 1. Distribución de los aminoácidos en las proteínas}
+\label{1:sec:1}
+Antes del descubrimiento del código genético aceptado actualmente, se habían propuesto ciertos códigos basados, entre otras, en consideraciones de dependencia entre los aminoácidos de una proteína. ( Código Triángulo y código Diamante)
+Una experiencia de Gamow parece indicar que no se dan tales relaciones, al menos para las proteínas estudiadas. Se compilaron los dipéptidos que podían formarse tomando aminoácidos vecinos, en una muestra de proteínas con unas proporciones de aminoácidos bastante equilibradas, descartando algunas con una composición altamente especializada. Con la muestra utilizada podían formarse 177 dipéptidos, de este tipo. Si se consideran 20 aminoácidos distintos, pueden formarse $20*20=400$ \ combinaciones diferentes de dos aminoácidos, con lo que, por término medio se observarán:\\
+\\
+\centerline{ $\frac{177}{400}=0.442$} dipéptidos de un tipo.\\
+\\
+Los 400 pares posibles pueden considerarse como ''casilla'', a las que un dipéptido ''pertenece'' si está formado por aquellos dos aminoácidos, pero se repite la experiencia un número de veces $N=177$, grande (número de dipéptidos realmente observados), la variable aleatoria $x$= "número de dipéptidos en una casilla", seguirá una distribución de Poisson\\
+\\
+\centerline {$f(x)= e^{-\LAl}\frac{\LAl^x}{x!}$  (x = 0,1,2,3,\dots,n,\dots)}\\
+\\
+siendo $\LAl=\frac{177}{400}=0.442$, de manera que el número esperado de casillas con x dipéptidos será $Nf(x)$.\\
+\\
+ Los resultados se resumen en la tabla anexa (véase el cuadro \ref {tabla1}). Como se puede apreciar en ella, la distribución de dipéptidos observada se ajusta en gran medida a la esperada según la distribución de Poisson, cosa que no ocurre con la distribución esperada según los códigos ''Diamante'' y ''Triangulo''.
+
+\input{tables/table.tex}
+%---------------------------------------------------------------------------------
+\section{Ejemplo 2. Carnavales}
+La probabilidad de que en carnavales una persona se desmaye es de 0.001. Considerando que acuden unas 5000 personas, ¿cuál es la probabilidad de que se desmayen 25 personas?\\
+\\
+\large Solución:\\
+\\
+Se trata de una binomial con $n=5000$ y $p=0.001$. La probabilidad sería:\\
+\\
+\centerline {$F(x=25)={5000 \choose 25}0.001^{25}(1-0.001)^{5000-25}$}\\
+\\
+que resulta complejo de calcular. Por eso se prefiere aproximar a una distribución de Poisson, con \LA \ = $5000*0.001=50$, y quedaría:\\
+\\
+\centerline {$F(x=25)=(e^{-50})\frac{50^{25}}{25!}=3.70*10^{-5}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ejemplo 3. Cheques sin fondo}
+Si un banco recibe en promedio 6 cheques sin fondo por día, ¿cuáles son las probabilidades de que reciba:\\
+\begin{enumerate}
+\item cuatro cheques sin fondo en un día dado?
+\item diez cheques sin fondo en cualquiera de dos días consecutivos?
+\end{enumerate}
+\large Solución:
+\begin{enumerate}
+\item x = variable que nos define el número de cheques sin fondo que llegan al banco en un día cualquiera=0,1,2,3,\dots.
+\LA \ = 6 cheques sin fondo por día.\\
+\\
+\centerline {$p(x=4,\LAl=6)= \frac{6^{4}2.718^{-6}}{4!} = \frac{(1296)(0.00248)}{24} = 0.13392$}
+\item x = variable que nos define el número de cheques sin fondo que llegan al banco en dos días consecutivos=0,1,2,3,\dots.
+$\LAl \ =6*2=12 $ cheques sin fondo en promedio que llegan al banco en dos días consecutivos.\\
+\\
+\centerline {$p(x=10,\LAl=12)= \frac{12^{10}2718^{-12}}{10!} = \frac{(6.1917364*10^{10})(0.000006151)}{3628800} = 0.104953$}
+\end{enumerate}
+
